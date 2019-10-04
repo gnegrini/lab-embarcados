@@ -5,6 +5,11 @@
     <configuration>
         <name>Debug</name>
         <outputs>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\systick.h</file>
+            <file>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\pin_map.h</file>
+            <file>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\gpio.h</file>
             <file>$PROJ_DIR$\src\TM4C1294NCPDT.h</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
             <file>$PROJ_DIR$\src\simple_uart.c</file>
@@ -64,7 +69,7 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 36 23</file>
+                    <file> 28 41</file>
                 </tool>
             </outputs>
         </file>
@@ -73,11 +78,11 @@
             <outputs>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 32</file>
+                    <file> 37</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 7</file>
+                    <file> 12</file>
                 </tool>
             </outputs>
         </file>
@@ -86,34 +91,40 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 1</file>
+                    <file> 6</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 10</file>
+                    <file> 15</file>
                 </tool>
             </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 35 50 29 10 30 13 55 0 1 21 4 8 2 46 3 56 36 20</file>
+                </tool>
+            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\src\system_TM4C1294_TW.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 46</file>
+                    <file> 51</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 29</file>
+                    <file> 34</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 38</file>
+                    <file> 43</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 30 45 24 5 25 8 0 42 40 39 27 47 15 50 3</file>
+                    <file> 35 50 29 10 30 13 5 47 45 44 32 52 20 55 8</file>
                 </tool>
             </inputs>
         </file>
@@ -122,7 +133,7 @@
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 9</file>
+                    <file> 14</file>
                 </tool>
             </outputs>
         </file>
@@ -131,21 +142,21 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 37</file>
+                    <file> 42</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 52</file>
+                    <file> 57</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 48</file>
+                    <file> 53</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 50 30 45 24 5 25 8 31 4 16 6 34 43 17 35 11 3 41 51</file>
+                    <file> 55 35 50 29 10 30 13 36 9 21 11 39 48 22 40 16 8 46 56</file>
                 </tool>
             </inputs>
         </file>
@@ -154,13 +165,13 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 36</file>
+                    <file> 41</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 18 19 1 9 46 37 33 26 49 44</file>
+                    <file> 23 24 6 14 51 42 38 31 54 49</file>
                 </tool>
             </inputs>
         </file>
@@ -169,21 +180,21 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 37</file>
+                    <file> 42</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 52</file>
+                    <file> 57</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 48</file>
+                    <file> 53</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 50 30 45 24 5 25 8 31 4 16 6 34 43 17 35 11 3 41 51</file>
+                    <file> 55 35 50 29 10 30 13 36 9 21 11 39 48 22 40 16 8 46 56</file>
                 </tool>
             </inputs>
         </file>
