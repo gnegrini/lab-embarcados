@@ -27,68 +27,99 @@ void imprime();
 uint32_t FREQ_TIVA_24 = 24000000;    //24000000        // f = 1Hz para clock = 24MHz
 uint32_t FREQ_TIVA_120 = 120000000;   //120000000       // f = 100MHz
 
+uint32_t time_out = 0;
 
 void handlerA();
 void handlerB();
+void TIMER0Init();
+void TIMER2Init();
 
-void main(void){
 
-  //SysTickPeriodSet(FREQ_TIVA_24);
-  
-  //SysCtlClockSet(SYSCTL_SYSDIV_1 | SYSCTL_USE_OSC | SYSCTL_OSC_MAIN |
-  //                 SYSCTL_XTAL_8MHZ);
-  
+void TIMER0Init(){
+
   //Ativa o timer0 e espera ficar pronto
   SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER0);
   
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_TIMER0)){
   }
   
-  //TimerA half-width one-shot timer, timerB half-width edge capture counter
-  TimerConfigure(TIMER0_BASE, 
-        (TIMER_CFG_SPLIT_PAIR | TIMER_CFG_A_ONE_SHOT |TIMER_CFG_B_CAP_COUNT));
-  
-  IntMasterEnable();
-  
-  
-  
-  
+  //TimerA half-width one-shot timer
+  TimerConfigure(TIMER0_BASE, TIMER_CFG_A_ONE_SHOT);
+    
   //Ajusta o tempo do OneShot
-  TimerLoadSet(TIMER0_BASE, TIMER_A, SysCtlClockGet() * 3);
+  TimerLoadSet(TIMER0_BASE, TIMER_A, SystemCoreClock * 5.75);
   
   
   //Configura o TimerB para ambas bordas, mudar para TIMER_CFG_A_CAP_TIME_U
-  TimerControlEvent(TIMER0_BASE, TIMER_B, TIMER_EVENT_BOTH_EDGES);
-  
+  //TimerControlEvent(TIMER0_BASE, TIMER_B, TIMER_EVENT_BOTH_EDGES);  
   
   //Ativa as interrupcoes nos timers
+  TimerIntEnable(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+}
+
+void TIMER2Init(){
+  //Ativa o timer0 e espera ficar pronto
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_TIMER2);
   
+  while(!SysCtlPeripheralReady(SYSCTL_PERIPH_TIMER2)){
+  }
+  
+  //TimerA half-width one-shot timer
+  TimerConfigure(TIMER2_BASE, TIMER_CFG_A_CAP_TIME_U);
+    
+  //Ajusta o tempo do OneShot
+  //TimerLoadSet(TIMER2_BASE, TIMER_A, SystemCoreClock * 5.75);
+  
+  
+  //Configura o TimerB para ambas bordas, mudar para TIMER_CFG_A_CAP_TIME_U
+  TimerControlEvent(TIMER2_BASE, TIMER_B, TIMER_EVENT_BOTH_EDGES);  
+  
+  //Ativa as interrupcoes nos timers
+  TimerIntEnable(TIMER2_BASE, TIMER_CAPA_EVENT);
+  
+  
+}
+
+void main(void){
+
+ 
+  UARTInit();
+  
+  
+  TIMER0Init();
+  TIMER2Init();
+  
+  
+  
+  //ativa interrupcoes
   IntEnable(INT_TIMER0A);
-  TimerIntEnable(TIMER0_BASE, TIMER_TIMA_TIMEOUT | TIMER_CAPB_EVENT);
-  
-  
-  //Configura as interrupcoes nos timers
-  TimerIntRegister(TIMER0_BASE, TIMER_A, handlerA);
-  TimerIntRegister(TIMER0_BASE, TIMER_B, handlerB);
+  IntMasterEnable();
   
   //Ativa os timers
-  TimerEnable(TIMER0_BASE, TIMER_BOTH);
+  TimerEnable(TIMER0_BASE, TIMER_A);
   
-  UARTInit();
+  
+  
+  while(1){
+   
+    if(time_out) {
+      UARTprintf("Time Out\n");
+      UARTDisable(UART0_BASE);
+    }
+    
+  } 
+  
+  
  }
 
 //Handler de quando ocorre um timeout
-void handlerA(){
+void TIMER0A_Handler(){
   
-  //TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
+  TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
   //enviar mensagem pela uart  
   
-  UARTprintf("Time Out\n");
-  
-  UARTDisable(UART0_BASE);
-  
-  //travar programa
-  while(1);
+  time_out = 1;
+    
 }
 
 void handlerB(){
