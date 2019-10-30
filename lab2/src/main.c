@@ -67,8 +67,11 @@ void PORTInit(){
   while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOM)); // Aguarda final da habilitação
   
   GPIOPinTypeGPIOInput(GPIO_PORTM_BASE, GPIO_PIN_0); // Pino PM0 como entrada
-  GPIOPadConfigSet(GPIO_PORTM_BASE, GPIO_PIN_0, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
+  //GPIOPadConfigSet(GPIO_PORTM_BASE, GPIO_PIN_0, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
 
+  GPIOPinTypeTimer(GPIO_PORTM_BASE, GPIO_PIN_0);
+  GPIOPinConfigure(0x000B0003); //GPIO_PM0_T2CCP0
+  
 }
 
 
@@ -103,6 +106,8 @@ void TIMER2Init(){
   
   //Configura o Timer2 para ambas bordas
   TimerControlEvent(TIMER2_BASE, TIMER_A, TIMER_EVENT_BOTH_EDGES);
+  
+  TimerLoadSet(TIMER2_BASE, TIMER_A, 0);
   
   //Ativa as interrupcoes no timer2
   TimerIntEnable(TIMER2_BASE, TIMER_CAPA_EVENT);
@@ -170,8 +175,7 @@ void main(void){
   
   //ativa interrupcoes
   IntEnable(INT_TIMER0A);
-  IntEnable(INT_TIMER2A);
-  IntMasterEnable();
+  
   
   //Ativa o timer0
   TimerEnable(TIMER0_BASE, TIMER_A);
@@ -181,7 +185,8 @@ void main(void){
   
   //Ativa o timer2
   TimerEnable(TIMER2_BASE, TIMER_A);
-  
+  IntEnable(INT_TIMER2A);
+  IntMasterEnable();
   
   while(ct_sample<MAX){
    

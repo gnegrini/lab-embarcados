@@ -23370,7 +23370,7 @@
     "display": "void TIMER0Init(void)",
     "location": {
       "column": "6",
-      "line": "75",
+      "line": "78",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "TIMER0Init",
@@ -23384,7 +23384,7 @@
     "display": "void TIMER2Init(void)",
     "location": {
       "column": "6",
-      "line": "94",
+      "line": "97",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "TIMER2Init",
@@ -23398,7 +23398,7 @@
     "display": "void TIMER0A_Handler(void)",
     "location": {
       "column": "6",
-      "line": "114",
+      "line": "119",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "TIMER0A_Handler",
@@ -23412,7 +23412,7 @@
     "display": "void TIMER2A_Handler(void)",
     "location": {
       "column": "6",
-      "line": "122",
+      "line": "127",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "TIMER2A_Handler",
@@ -23426,7 +23426,7 @@
     "display": "void imprime(void)",
     "location": {
       "column": "6",
-      "line": "134",
+      "line": "139",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "imprime",
@@ -23434,13 +23434,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3501@F@imprime@duty_cycle",
+    "ID": "c:main.c@3654@F@imprime@duty_cycle",
     "What": "Variable",
     "defdec": "Def",
     "display": "duty_cycle",
     "location": {
       "column": "9",
-      "line": "136",
+      "line": "141",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "duty_cycle",
@@ -23448,13 +23448,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3522@F@imprime@frequencia_onda",
+    "ID": "c:main.c@3675@F@imprime@frequencia_onda",
     "What": "Variable",
     "defdec": "Def",
     "display": "frequencia_onda",
     "location": {
       "column": "9",
-      "line": "137",
+      "line": "142",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "frequencia_onda",
@@ -23462,13 +23462,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3548@F@imprime@periodo_onda",
+    "ID": "c:main.c@3701@F@imprime@periodo_onda",
     "What": "Variable",
     "defdec": "Def",
     "display": "periodo_onda",
     "location": {
       "column": "9",
-      "line": "138",
+      "line": "143",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "periodo_onda",
@@ -23476,13 +23476,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3578@F@imprime@buffer",
+    "ID": "c:main.c@3731@F@imprime@buffer",
     "What": "Variable",
     "defdec": "Def",
     "display": "buffer",
     "location": {
       "column": "8",
-      "line": "141",
+      "line": "146",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "buffer",
@@ -23490,13 +23490,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3598@F@imprime@duty",
+    "ID": "c:main.c@3751@F@imprime@duty",
     "What": "Variable",
     "defdec": "Def",
     "display": "duty",
     "location": {
       "column": "8",
-      "line": "142",
+      "line": "147",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "duty",
@@ -23504,13 +23504,13 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@3621@F@imprime@i",
+    "ID": "c:main.c@3774@F@imprime@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "12",
-      "line": "143",
+      "line": "148",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "i",
@@ -23524,7 +23524,7 @@
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "162",
+      "line": "167",
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab2\\src\\main.c"
     },
     "name": "main",
