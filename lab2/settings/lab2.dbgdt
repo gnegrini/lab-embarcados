@@ -743,7 +743,7 @@
                 <expressions>
                     <item>SystemCoreClock</item>
                     <item>time_out</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>
