@@ -1,0 +1,208 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  09/Nov/2019  19:54:06
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\Giovane\Documents\Embarcados\entregas\Projects\lab3-pwm\Debug\Exe\lab3-pwm.out
+#    Map file     =
+#        C:\Users\Giovane\Documents\Embarcados\entregas\Projects\lab3-pwm\Debug\List\lab3-pwm.map
+#    Command line =
+#        -f C:\Users\Giovane\AppData\Local\Temp\EWE4A1.tmp
+#        (C:\Users\Giovane\Documents\Embarcados\entregas\TivaWare_C_Series-2.1.4.178\driverlib\ewarm\Exe\driverlib.a
+#        C:\Users\Giovane\Documents\Embarcados\entregas\Projects\lab3-pwm\Debug\Obj\main.o
+#        C:\Users\Giovane\Documents\Embarcados\entregas\Projects\lab3-pwm\Debug\Obj\startup_TM4C1294.o
+#        C:\Users\Giovane\Documents\Embarcados\entregas\Projects\lab3-pwm\Debug\Obj\system_TM4C1294_TW.o
+#        --no_out_extension -o
+#        C:\Users\Giovane\Documents\Embarcados\entregas\Projects\lab3-pwm\Debug\Exe\lab3-pwm.out
+#        --map
+#        C:\Users\Giovane\Documents\Embarcados\entregas\Projects\lab3-pwm\Debug\List\lab3-pwm.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\config\linker\TexasInstruments\TM4C1294NC.icf" --semihosting
+#        --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x0 { ro section .intvec };
+"P1":  place in [from 0x0 to 0xf'ffff] { ro };
+define block CSTACK with size = 32K, alignment = 8 { };
+define block HEAP with size = 64K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2003'ffff] {
+          rw, block CSTACK, block HEAP };
+
+  Section   Kind         Address    Size  Object
+  -------   ----         -------    ----  ------
+"A0":                              0x3c0
+  .intvec   ro code          0x0   0x3c0  startup_TM4C1294.o [1]
+                         - 0x3c0   0x3c0
+
+"P1":                              0x940
+  .text     ro code        0x3c0   0x29c  sysctl.o [3]
+  .text     ro code        0x65c   0x1cc  gpio.o [3]
+  .rodata   const          0x828   0x1b0  sysctl.o [3]
+  .text     ro code        0x9d8    0xe0  main.o [1]
+  .text     ro code        0xab8    0x86  pwm.o [3]
+  .text     ro code        0xb3e     0x2  startup_TM4C1294.o [1]
+  .rodata   const          0xb40    0x90  gpio.o [3]
+  .rodata   const          0xbd0    0x6c  sysctl.o [3]
+  .rodata   const          0xc3c    0x30  sysctl.o [3]
+  .text     ro code        0xc6c    0x2c  system_TM4C1294_TW.o [1]
+  .text     ro code        0xc98    0x1e  cmain.o [4]
+  .text     ro code        0xcb6     0x4  low_level_init.o [2]
+  .text     ro code        0xcba     0x4  exit.o [2]
+  .text     ro code        0xcc0     0xa  cexit.o [4]
+  .text     ro code        0xccc    0x14  exit.o [5]
+  .text     ro code        0xce0    0x14  startup_TM4C1294.o [1]
+  .text     ro code        0xcf4     0xc  cstartup_M.o [4]
+                         - 0xd00   0x940
+
+"P2":                             0x8008
+  .noinit   uninit   0x2000'0000     0x4  system_TM4C1294_TW.o [1]
+  CSTACK             0x2000'0008  0x8000  <Block>
+    CSTACK  uninit   0x2000'0008  0x8000  <Block tail>
+                   - 0x2000'8008  0x8008
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+        0xd00     0xf'ffff  0xf'f300
+  0x2000'8008  0x2003'ffff  0x3'7ff8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                ro code  ro data  rw data
+    ------                -------  -------  -------
+command line/config:
+    -----------------------------------------------
+    Total:
+
+C:\Users\Giovane\Documents\Embarcados\entregas\Projects\lab3-pwm\Debug\Obj: [1]
+    main.o                    224
+    startup_TM4C1294.o        982
+    system_TM4C1294_TW.o       44                 4
+    -----------------------------------------------
+    Total:                  1'250                 4
+
+dl7M_tln.a: [2]
+    exit.o                      4
+    low_level_init.o            4
+    -----------------------------------------------
+    Total:                      8
+
+driverlib.a: [3]
+    gpio.o                    460      144
+    pwm.o                     134
+    sysctl.o                  668      588
+    -----------------------------------------------
+    Total:                  1'262      732
+
+rt7M_tl.a: [4]
+    cexit.o                    10
+    cmain.o                    30
+    cstartup_M.o               12
+    -----------------------------------------------
+    Total:                     52
+
+shb_l.a: [5]
+    exit.o                     20
+    -----------------------------------------------
+    Total:                     20
+
+    Gaps                        4
+    Linker created                           32'768
+---------------------------------------------------
+    Grand Total:            2'596      732   32'772
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address   Size  Type      Object
+-----                       -------   ----  ----      ------
+?main                         0xc99         Code  Gb  cmain.o [4]
+CSTACK$$Base            0x2000'0008          --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'8008          --   Gb  - Linker created -
+GPIODirModeSet                0x65d   0x28  Code  Gb  gpio.o [3]
+GPIOInit                      0x9d9   0x48  Code  Gb  main.o [1]
+GPIOPadConfigSet              0x685  0x102  Code  Gb  gpio.o [3]
+GPIOPinConfigure              0x7e7   0x36  Code  Gb  gpio.o [3]
+GPIOPinTypeGPIOInput          0x793   0x14  Code  Gb  gpio.o [3]
+GPIOPinTypeGPIOOutput         0x7a7    0xa  Code  Gb  gpio.o [3]
+GPIOPinTypePWM                0x7c3   0x14  Code  Gb  gpio.o [3]
+GPIOPinWrite                  0x787    0x8  Code  Gb  gpio.o [3]
+PWMGenConfigure               0xab9   0x2e  Code  Gb  pwm.o [3]
+PWMGenEnable                  0xafb    0xc  Code  Gb  pwm.o [3]
+PWMGenPeriodSet               0xae7   0x14  Code  Gb  pwm.o [3]
+PWMInit                       0xa21   0x4a  Code  Gb  main.o [1]
+PWMOutputState                0xb2b   0x14  Code  Gb  pwm.o [3]
+PWMPulseWidthSet              0xb07   0x24  Code  Gb  pwm.o [3]
+Region$$Table$$Base             0x0          --   Gb  - Linker created -
+Region$$Table$$Limit            0x0          --   Gb  - Linker created -
+SysCtlClockFreqSet            0x421  0x1fc  Code  Gb  sysctl.o [3]
+SysCtlPeripheralEnable        0x403    0x8  Code  Gb  sysctl.o [3]
+SysCtlPeripheralReady         0x3e1    0x8  Code  Gb  sysctl.o [3]
+SystemCoreClock         0x2000'0000    0x4  Data  Gb  system_TM4C1294_TW.o [1]
+SystemInit                    0xc6d   0x1a  Code  Gb  system_TM4C1294_TW.o [1]
+_SysCtlMemTimingGet           0x3c1   0x20  Code  Lc  sysctl.o [3]
+__Vectors                       0x0          --   Gb  startup_TM4C1294.o [1]
+__Vectors_End                 0x3c0         Data  Gb  startup_TM4C1294.o [1]
+__Vectors_Size {Abs}          0x3c0          --   Gb  startup_TM4C1294.o [1]
+__cmain                       0xc99         Code  Gb  cmain.o [4]
+__exit                        0xccd   0x14  Code  Gb  exit.o [5]
+__iar_init_vfp                0xce9         Code  Wk  startup_TM4C1294.o [1]
+__iar_program_start           0xcf5         Code  Gb  cstartup_M.o [4]
+__low_level_init              0xcb7    0x4  Code  Gb  low_level_init.o [2]
+__vector_table                  0x0         Data  Gb  startup_TM4C1294.o [1]
+__vector_table_0x1c            0x1c         Data  Gb  startup_TM4C1294.o [1]
+_call_main                    0xca5         Code  Gb  cmain.o [4]
+_exit                         0xcc1         Code  Gb  cexit.o [4]
+_main                         0xcb3         Code  Gb  cmain.o [4]
+exit                          0xcbb    0x4  Code  Gb  exit.o [2]
+g_pppui32XTALtoVCO            0x828  0x1b0  Data  Lc  sysctl.o [3]
+g_pui32GPIOBaseAddrs          0xb40   0x90  Data  Lc  gpio.o [3]
+g_pui32VCOFrequencies         0x654    0x8  Data  Lc  sysctl.o [3]
+g_pui32Xtals                  0xbd0   0x6c  Data  Lc  sysctl.o [3]
+g_sXTALtoMEMTIM               0xc3c   0x30  Data  Lc  sysctl.o [3]
+main                          0xa6b   0x2a  Code  Gb  main.o [1]
+
+
+[1] = C:\Users\Giovane\Documents\Embarcados\entregas\Projects\lab3-pwm\Debug\Obj
+[2] = dl7M_tln.a
+[3] = driverlib.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+   2'596 bytes of readonly  code memory
+     732 bytes of readonly  data memory
+  32'772 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
