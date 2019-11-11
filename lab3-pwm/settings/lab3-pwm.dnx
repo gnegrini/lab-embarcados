@@ -49,7 +49,7 @@
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
     <DebugChecksum>
-        <Checksum>656462262</Checksum>
+        <Checksum>4061195588</Checksum>
     </DebugChecksum>
     <LMIFTDIDriver>
         <LMIFTDIserialNo>0F00B329</LMIFTDIserialNo>
@@ -65,12 +65,12 @@
     <Disassembly>
         <MixedMode>1</MixedMode>
     </Disassembly>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints>
-        <Count>0</Count>
-    </Breakpoints>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -80,16 +80,17 @@
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints>
+        <Bp0>_ "STD_CODE" "{$PROJ_DIR$\src\main.c}.159.5" 1 0 0 0 "" 0 ""</Bp0>
+        <Count>1</Count>
+    </Breakpoints>
     <Aliases>
         <A0>_ "C:\Users\Giovane\Downloads\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178\driverlib\adc.c" "C:\Users\Giovane\Documents\Embarcados\entregas\TivaWare_C_Series-2.1.4.178\driverlib\adc.c"</A0>
         <A1>_ "C:\Users\Giovane\Downloads\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178\driverlib\pwm.c" "C:\Users\Giovane\Documents\Embarcados\entregas\TivaWare_C_Series-2.1.4.178\driverlib\pwm.c"</A1>
         <Count>2</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
-    <CallStackLog>
-        <Enabled>0</Enabled>
-    </CallStackLog>
-    <CallStackStripe>
-        <ShowTiming>1</ShowTiming>
-    </CallStackStripe>
 </settings>

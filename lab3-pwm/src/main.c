@@ -5,6 +5,8 @@
 
 // includes da biblioteca driverlib
 #include "inc/hw_memmap.h"
+#include "inc/hw_ints.h"
+#include "inc/tm4c1294ncpdt.h"
 #include "system_TM4C1294.h" 
 #include "driverlib/pin_map.h"
 #include "driverlib/sysctl.h"
@@ -12,17 +14,44 @@
 #include "driverlib/pwm.h"
 #include "driverlib/adc.h"
 #include "driverlib/fpu.h"
+#include "driverlib/interrupt.h"
 
 #define MAX (10)
 #define PRECISAO (4095)
-#define TICKS_IN_PERIOD (400)
+#define TICKS_IN_PERIOD (20000)
+#define SW1       (GPIO_PIN_0)    //PJ0
+#define SW2       (GPIO_PIN_1)    //PJ1
+
 
 
 uint32_t PotValue;
 uint32_t dc;
+uint8_t horario = 0;
+
+
+
 
 void GPIOInit(){
     
+  ///Buttons GPIO
+
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOJ); // Habilita GPIO J (push-button SW1 = PJ0, push-button SW2 = PJ1)
+  while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOJ)); // Aguarda final da habilitação
+  
+  // Configura os dois pinos para leitura do estado das chaves SW1 e SW2
+  GPIOPinTypeGPIOInput(GPIO_PORTJ_BASE, SW1 | SW2);
+  
+  // Configura a força para 2 mAe resistor fraco de pull-up
+  GPIOPadConfigSet(GPIO_PORTJ_BASE, GPIO_PIN_0| GPIO_PIN_1, GPIO_STRENGTH_2MA, GPIO_PIN_TYPE_STD_WPU);
+  
+  // Configura o PF4 com interrupção na borda de descida 
+  GPIOIntTypeSet(GPIO_PORTJ_BASE, GPIO_PIN_0| GPIO_PIN_1, GPIO_FALLING_EDGE);
+  // Habilita a interrupção do pino PF4
+  GPIOIntEnable(GPIO_PORTJ_BASE, GPIO_PIN_0| GPIO_PIN_1);
+  // Habilita a interrupção do GPIOJ
+  IntEnable(INT_GPIOJ_TM4C129);
+  
+  
   ///MotorDir GPIO (PE0 e PE1) e Pot Setpoint GPIO (PE4)  
   // Enable and wait for the GPIOE peripheral
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOE);
@@ -50,7 +79,7 @@ void GPIOInit(){
  
 }
 
-//initialize  the  PWM2  with  a  50  KHzfrequency, and with a 25% duty cycle
+//initialize  the  PWM2  with  a  1Khz  KHzfrequency, and with a 0% duty cycle
 void PWMInit (void){
 
   // The TM4C1294NCPDT microcontroller contains *one* PWM module, 
@@ -69,16 +98,15 @@ void PWMInit (void){
   PWMGenConfigure(PWM0_BASE, PWM_GEN_1, PWM_GEN_MODE_DOWN | PWM_GEN_MODE_DBG_RUN | PWM_GEN_MODE_NO_SYNC);
 
  
-  // Set the period.  For a 50 KHz frequency, the period = 1/50,000, or 200
-  // nano seconds.  For a 20 MHz clock, this translates to 400 clock ticks.
+  // Set the period.  
   // 20MHz => 20.000.000 ticks every second or 1 tick every 50 nanosecond
-  // 50Khz => 20 microseconds
+  // 1Khz => x microseconds
   // How many clock ticks in 20 mcsec? = 20e-6 / 50e-9 = 400
-  // Or: 20Mhz / 50Khz = 400 ticks = TICKS_IN_PERIOD
+  // Or: 20Mhz / 1Khz = 20000 ticks = TICKS_IN_PERIOD
   PWMGenPeriodSet(PWM0_BASE, PWM_GEN_1, TICKS_IN_PERIOD);
   
-  // Set the pulse width of PWM2 for a 25% duty cycle.
-  PWMPulseWidthSet(PWM0_BASE, PWM_OUT_2, 100);
+  // Set the pulse width of PWM2 for a 0% duty cycle.
+  PWMPulseWidthSet(PWM0_BASE, PWM_OUT_2, 0);
   
   // Start the timers in generator 1.
   PWMGenEnable(PWM0_BASE, PWM_GEN_1);
@@ -125,17 +153,47 @@ void PotRead (void){
   
 }
 
+void GPIOJ_Handler(void){
+
+     // 1. Check the PIN, make sure that the IRQ occurred from the PIN you defined
+    if ((GPIO_PORTJ_AHB_RIS_R & 0x01) == 0x00) {
+        // The code for IRQ
+								
+        horario = 1;  
+  
+			
+			
+    }else {
+      
+      horario = 0;
+    
+    }
+  
+  
+  GPIOIntClear(GPIO_PORTJ_BASE, SW1|SW2);
+  
+}
+
 void RunMotor(){
   
- 
+  
+  if(horario){
+    // Girar motor no Sentido Horario
+  GPIOPinWrite(GPIO_PORTE_BASE,(GPIO_PIN_1 | GPIO_PIN_0),(GPIO_PIN_0));
+  } else {
+    // Girar motor no Sentido Anti-Horario
+    GPIOPinWrite(GPIO_PORTE_BASE,(GPIO_PIN_1 | GPIO_PIN_0),(GPIO_PIN_1));    
+  }
+  
+  
   PotRead();
   
+  //IMPLEMENTAR DIRECAO DO MOTOR
   
   dc = ((float) PotValue / (float) PRECISAO) * (float) TICKS_IN_PERIOD;
   
   // Set the pulse width of PWM2 with dc
   PWMPulseWidthSet(PWM0_BASE, PWM_OUT_2, dc);
-  
   
 }
 
@@ -149,22 +207,12 @@ void main(void){
   GPIOInit();
   PWMInit();
   ADCInit();
-  
-  
-  // Girar motor no Sentido Horario
-  GPIOPinWrite(GPIO_PORTE_BASE,(GPIO_PIN_1 | GPIO_PIN_0),(GPIO_PIN_0));
-    
+  IntMasterEnable();
   
   while(1){      
       
     RunMotor();
     
   }
-  
-  
-  // Girar motor no Sentido Anti-Horario
-  //GPIOPinWrite(GPIO_PORTE_BASE,(GPIO_PIN_1 | GPIO_PIN_0),(GPIO_PIN_1));
-
-  
   
 }
