@@ -36,7 +36,7 @@ void GPIOInit(){
   GPIOPinTypePWM(GPIO_PORTF_BASE, GPIO_PIN_2);
   
   // Enable PWM2 functionality on GPIO Port F pin 2.
-  GPIOPinConfigure(0x00050806);  // GPIO_PF2_M0PWM2: 0x00050806
+  GPIOPinConfigure(0x00050806);   //GPIO_PF2_M0PWM2: 0x00050806
  
 }
 
@@ -56,7 +56,7 @@ void PWMInit (void){
   
   // Configure the PWM generator for count down mode with immediate updates
   // to the parameters. PWM_GEN_MODE_DBG_RUN permite ao contador continuar mesmo no debug
-  PWMGenConfigure(PWM0_BASE, PWM_GEN_1, PWM_GEN_MODE_DOWN | PWM_GEN_MODE_NO_SYNC);
+  PWMGenConfigure(PWM0_BASE, PWM_GEN_1, PWM_GEN_MODE_DOWN | PWM_GEN_MODE_DBG_RUN | PWM_GEN_MODE_NO_SYNC);
 
  
   // Set the period.  For a 50 KHz frequency, the period = 1/50,000, or 200
@@ -74,20 +74,19 @@ void PWMInit (void){
   PWMGenEnable(PWM0_BASE, PWM_GEN_1);
   
   // Enable the outputs.//
-  PWMOutputState(PWM0_BASE, PWM_OUT_2_BIT, true);
+  PWMOutputState(PWM0_BASE, (PWM_OUT_2_BIT), true);
 
 }
 
 
 void main(void){
-  
-  uint32_t clock;
-  
-  //Configure the system clocking to be 40 MHz with a 320-MHz PLL setting using the 16-MHz internal oscillator
-  clock = SysCtlClockFreqSet(SYSCTL_OSC_INT | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_320, 20000000);
-  
+    
   GPIOInit();
   PWMInit();
+  
+  
+  // Set the pulse width of PWM2 for a 75% duty cycle.
+  PWMPulseWidthSet(PWM0_BASE, PWM_OUT_2, 300);
   
   // Girar motor no Sentido Horario
   GPIOPinWrite(GPIO_PORTE_BASE,(GPIO_PIN_1 | GPIO_PIN_0),(GPIO_PIN_0));

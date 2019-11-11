@@ -11766,17 +11766,1361 @@
     "scope": null
   },
   {
-    "ID": "c:main.c@2797@F@main@clock",
-    "What": "Variable",
+    "ID": "c:hw_memmap.h@2039@macro@__HW_MEMMAP_H__",
+    "What": "MacroDef",
     "defdec": "Def",
-    "display": "clock",
+    "display": "__HW_MEMMAP_H__",
     "location": {
-      "column": "12",
-      "line": "84",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\Projects\\lab3-pwm\\src\\main.c"
+      "column": "9",
+      "line": "41",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
     },
-    "name": "clock",
-    "origin": "project_file",
+    "name": "__HW_MEMMAP_H__",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2324@macro@FLASH_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FLASH_BASE",
+    "location": {
+      "column": "9",
+      "line": "49",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "FLASH_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2385@macro@SRAM_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SRAM_BASE",
+    "location": {
+      "column": "9",
+      "line": "50",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "SRAM_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2445@macro@WATCHDOG0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "WATCHDOG0_BASE",
+    "location": {
+      "column": "9",
+      "line": "51",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "WATCHDOG0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2503@macro@WATCHDOG1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "WATCHDOG1_BASE",
+    "location": {
+      "column": "9",
+      "line": "52",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "WATCHDOG1_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2561@macro@GPIO_PORTA_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_BASE",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTA_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2621@macro@GPIO_PORTB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_BASE",
+    "location": {
+      "column": "9",
+      "line": "54",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2681@macro@GPIO_PORTC_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_BASE",
+    "location": {
+      "column": "9",
+      "line": "55",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTC_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2741@macro@GPIO_PORTD_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_BASE",
+    "location": {
+      "column": "9",
+      "line": "56",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTD_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2801@macro@SSI0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SSI0_BASE",
+    "location": {
+      "column": "9",
+      "line": "57",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "SSI0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2854@macro@SSI1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SSI1_BASE",
+    "location": {
+      "column": "9",
+      "line": "58",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "SSI1_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2907@macro@SSI2_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SSI2_BASE",
+    "location": {
+      "column": "9",
+      "line": "59",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "SSI2_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@2960@macro@SSI3_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SSI3_BASE",
+    "location": {
+      "column": "9",
+      "line": "60",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "SSI3_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3013@macro@UART0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART0_BASE",
+    "location": {
+      "column": "9",
+      "line": "61",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "UART0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3067@macro@UART1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART1_BASE",
+    "location": {
+      "column": "9",
+      "line": "62",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "UART1_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3121@macro@UART2_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART2_BASE",
+    "location": {
+      "column": "9",
+      "line": "63",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "UART2_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3175@macro@UART3_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART3_BASE",
+    "location": {
+      "column": "9",
+      "line": "64",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "UART3_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3229@macro@UART4_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART4_BASE",
+    "location": {
+      "column": "9",
+      "line": "65",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "UART4_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3283@macro@UART5_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART5_BASE",
+    "location": {
+      "column": "9",
+      "line": "66",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "UART5_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3337@macro@UART6_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART6_BASE",
+    "location": {
+      "column": "9",
+      "line": "67",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "UART6_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3391@macro@UART7_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UART7_BASE",
+    "location": {
+      "column": "9",
+      "line": "68",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "UART7_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3445@macro@I2C0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C0_BASE",
+    "location": {
+      "column": "9",
+      "line": "69",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "I2C0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3498@macro@I2C1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C1_BASE",
+    "location": {
+      "column": "9",
+      "line": "70",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "I2C1_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3551@macro@I2C2_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C2_BASE",
+    "location": {
+      "column": "9",
+      "line": "71",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "I2C2_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3604@macro@I2C3_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C3_BASE",
+    "location": {
+      "column": "9",
+      "line": "72",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "I2C3_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3657@macro@GPIO_PORTE_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_BASE",
+    "location": {
+      "column": "9",
+      "line": "73",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTE_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3717@macro@GPIO_PORTF_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_BASE",
+    "location": {
+      "column": "9",
+      "line": "74",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTF_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3777@macro@GPIO_PORTG_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTG_BASE",
+    "location": {
+      "column": "9",
+      "line": "75",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTG_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3837@macro@GPIO_PORTH_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTH_BASE",
+    "location": {
+      "column": "9",
+      "line": "76",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTH_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3897@macro@PWM0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PWM0_BASE",
+    "location": {
+      "column": "9",
+      "line": "77",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "PWM0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@3973@macro@PWM1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "PWM1_BASE",
+    "location": {
+      "column": "9",
+      "line": "78",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "PWM1_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4049@macro@QEI0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "QEI0_BASE",
+    "location": {
+      "column": "9",
+      "line": "79",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "QEI0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4102@macro@QEI1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "QEI1_BASE",
+    "location": {
+      "column": "9",
+      "line": "80",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "QEI1_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4155@macro@TIMER0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIMER0_BASE",
+    "location": {
+      "column": "9",
+      "line": "81",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "TIMER0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4210@macro@TIMER1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIMER1_BASE",
+    "location": {
+      "column": "9",
+      "line": "82",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "TIMER1_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4265@macro@TIMER2_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIMER2_BASE",
+    "location": {
+      "column": "9",
+      "line": "83",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "TIMER2_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4320@macro@TIMER3_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIMER3_BASE",
+    "location": {
+      "column": "9",
+      "line": "84",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "TIMER3_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4375@macro@TIMER4_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIMER4_BASE",
+    "location": {
+      "column": "9",
+      "line": "85",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "TIMER4_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4430@macro@TIMER5_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIMER5_BASE",
+    "location": {
+      "column": "9",
+      "line": "86",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "TIMER5_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4485@macro@WTIMER0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "WTIMER0_BASE",
+    "location": {
+      "column": "9",
+      "line": "87",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "WTIMER0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4545@macro@WTIMER1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "WTIMER1_BASE",
+    "location": {
+      "column": "9",
+      "line": "88",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "WTIMER1_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4605@macro@ADC0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ADC0_BASE",
+    "location": {
+      "column": "9",
+      "line": "89",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "ADC0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4658@macro@ADC1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ADC1_BASE",
+    "location": {
+      "column": "9",
+      "line": "90",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "ADC1_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4711@macro@COMP_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "COMP_BASE",
+    "location": {
+      "column": "9",
+      "line": "91",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "COMP_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4778@macro@GPIO_PORTJ_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTJ_BASE",
+    "location": {
+      "column": "9",
+      "line": "92",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTJ_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4838@macro@CAN0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CAN0_BASE",
+    "location": {
+      "column": "9",
+      "line": "93",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "CAN0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4891@macro@CAN1_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CAN1_BASE",
+    "location": {
+      "column": "9",
+      "line": "94",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "CAN1_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@4944@macro@WTIMER2_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "WTIMER2_BASE",
+    "location": {
+      "column": "9",
+      "line": "95",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "WTIMER2_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5004@macro@WTIMER3_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "WTIMER3_BASE",
+    "location": {
+      "column": "9",
+      "line": "96",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "WTIMER3_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5064@macro@WTIMER4_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "WTIMER4_BASE",
+    "location": {
+      "column": "9",
+      "line": "97",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "WTIMER4_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5124@macro@WTIMER5_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "WTIMER5_BASE",
+    "location": {
+      "column": "9",
+      "line": "98",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "WTIMER5_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5184@macro@USB0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "USB0_BASE",
+    "location": {
+      "column": "9",
+      "line": "99",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "USB0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5249@macro@GPIO_PORTA_AHB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTA_AHB_BASE",
+    "location": {
+      "column": "9",
+      "line": "100",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTA_AHB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5322@macro@GPIO_PORTB_AHB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTB_AHB_BASE",
+    "location": {
+      "column": "9",
+      "line": "101",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTB_AHB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5395@macro@GPIO_PORTC_AHB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTC_AHB_BASE",
+    "location": {
+      "column": "9",
+      "line": "102",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTC_AHB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5468@macro@GPIO_PORTD_AHB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTD_AHB_BASE",
+    "location": {
+      "column": "9",
+      "line": "103",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTD_AHB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5541@macro@GPIO_PORTE_AHB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTE_AHB_BASE",
+    "location": {
+      "column": "9",
+      "line": "104",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTE_AHB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5614@macro@GPIO_PORTF_AHB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTF_AHB_BASE",
+    "location": {
+      "column": "9",
+      "line": "105",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTF_AHB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5687@macro@GPIO_PORTG_AHB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTG_AHB_BASE",
+    "location": {
+      "column": "9",
+      "line": "106",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTG_AHB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5760@macro@GPIO_PORTH_AHB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTH_AHB_BASE",
+    "location": {
+      "column": "9",
+      "line": "107",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTH_AHB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5833@macro@GPIO_PORTJ_AHB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTJ_AHB_BASE",
+    "location": {
+      "column": "9",
+      "line": "108",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTJ_AHB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5906@macro@GPIO_PORTK_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTK_BASE",
+    "location": {
+      "column": "9",
+      "line": "109",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTK_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@5966@macro@GPIO_PORTL_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTL_BASE",
+    "location": {
+      "column": "9",
+      "line": "110",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTL_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6026@macro@GPIO_PORTM_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTM_BASE",
+    "location": {
+      "column": "9",
+      "line": "111",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTM_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6086@macro@GPIO_PORTN_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTN_BASE",
+    "location": {
+      "column": "9",
+      "line": "112",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTN_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6146@macro@GPIO_PORTP_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTP_BASE",
+    "location": {
+      "column": "9",
+      "line": "113",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTP_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6206@macro@GPIO_PORTQ_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTQ_BASE",
+    "location": {
+      "column": "9",
+      "line": "114",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTQ_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6266@macro@GPIO_PORTR_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTR_BASE",
+    "location": {
+      "column": "9",
+      "line": "115",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTR_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6400@macro@GPIO_PORTS_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTS_BASE",
+    "location": {
+      "column": "9",
+      "line": "117",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTS_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6534@macro@GPIO_PORTT_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "GPIO_PORTT_BASE",
+    "location": {
+      "column": "9",
+      "line": "119",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "GPIO_PORTT_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6668@macro@EEPROM_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EEPROM_BASE",
+    "location": {
+      "column": "9",
+      "line": "121",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "EEPROM_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6730@macro@ONEWIRE0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ONEWIRE0_BASE",
+    "location": {
+      "column": "9",
+      "line": "122",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "ONEWIRE0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6799@macro@I2C8_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C8_BASE",
+    "location": {
+      "column": "9",
+      "line": "123",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "I2C8_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6852@macro@I2C9_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C9_BASE",
+    "location": {
+      "column": "9",
+      "line": "124",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "I2C9_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6905@macro@I2C4_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C4_BASE",
+    "location": {
+      "column": "9",
+      "line": "125",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "I2C4_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@6958@macro@I2C5_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C5_BASE",
+    "location": {
+      "column": "9",
+      "line": "126",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "I2C5_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7011@macro@I2C6_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C6_BASE",
+    "location": {
+      "column": "9",
+      "line": "127",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "I2C6_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7064@macro@I2C7_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "I2C7_BASE",
+    "location": {
+      "column": "9",
+      "line": "128",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "I2C7_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7117@macro@EPI0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EPI0_BASE",
+    "location": {
+      "column": "9",
+      "line": "129",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "EPI0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7170@macro@TIMER6_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIMER6_BASE",
+    "location": {
+      "column": "9",
+      "line": "130",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "TIMER6_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7241@macro@TIMER7_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TIMER7_BASE",
+    "location": {
+      "column": "9",
+      "line": "131",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "TIMER7_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7312@macro@EMAC0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "EMAC0_BASE",
+    "location": {
+      "column": "9",
+      "line": "132",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "EMAC0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7380@macro@SYSEXC_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SYSEXC_BASE",
+    "location": {
+      "column": "9",
+      "line": "133",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "SYSEXC_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7452@macro@HIB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "HIB_BASE",
+    "location": {
+      "column": "9",
+      "line": "134",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "HIB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7519@macro@FLASH_CTRL_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FLASH_CTRL_BASE",
+    "location": {
+      "column": "9",
+      "line": "135",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "FLASH_CTRL_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7584@macro@SYSCTL_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SYSCTL_BASE",
+    "location": {
+      "column": "9",
+      "line": "136",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "SYSCTL_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7647@macro@UDMA_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UDMA_BASE",
+    "location": {
+      "column": "9",
+      "line": "137",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "UDMA_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7711@macro@CCM0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CCM0_BASE",
+    "location": {
+      "column": "9",
+      "line": "138",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "CCM0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7791@macro@SHAMD5_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SHAMD5_BASE",
+    "location": {
+      "column": "9",
+      "line": "139",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "SHAMD5_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@7859@macro@AES_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "AES_BASE",
+    "location": {
+      "column": "9",
+      "line": "140",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "AES_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@8002@macro@DES_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DES_BASE",
+    "location": {
+      "column": "9",
+      "line": "142",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "DES_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@8141@macro@LCD0_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LCD0_BASE",
+    "location": {
+      "column": "9",
+      "line": "144",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "LCD0_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@8204@macro@ITM_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ITM_BASE",
+    "location": {
+      "column": "9",
+      "line": "145",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "ITM_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@8284@macro@DWT_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DWT_BASE",
+    "location": {
+      "column": "9",
+      "line": "146",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "DWT_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@8358@macro@FPB_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FPB_BASE",
+    "location": {
+      "column": "9",
+      "line": "147",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "FPB_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@8433@macro@NVIC_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NVIC_BASE",
+    "location": {
+      "column": "9",
+      "line": "148",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "NVIC_BASE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:hw_memmap.h@8512@macro@TPIU_BASE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TPIU_BASE",
+    "location": {
+      "column": "9",
+      "line": "149",
+      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
+    },
+    "name": "TPIU_BASE",
+    "origin": "user_include",
     "scope": null
   },
   {
@@ -13722,1364 +15066,6 @@
       "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\driverlib\\pwm.h"
     },
     "name": "PWMOutputUpdateMode",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2039@macro@__HW_MEMMAP_H__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__HW_MEMMAP_H__",
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "__HW_MEMMAP_H__",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2324@macro@FLASH_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "FLASH_BASE",
-    "location": {
-      "column": "9",
-      "line": "49",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "FLASH_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2385@macro@SRAM_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SRAM_BASE",
-    "location": {
-      "column": "9",
-      "line": "50",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "SRAM_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2445@macro@WATCHDOG0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "WATCHDOG0_BASE",
-    "location": {
-      "column": "9",
-      "line": "51",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "WATCHDOG0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2503@macro@WATCHDOG1_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "WATCHDOG1_BASE",
-    "location": {
-      "column": "9",
-      "line": "52",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "WATCHDOG1_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2561@macro@GPIO_PORTA_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTA_BASE",
-    "location": {
-      "column": "9",
-      "line": "53",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTA_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2621@macro@GPIO_PORTB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTB_BASE",
-    "location": {
-      "column": "9",
-      "line": "54",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2681@macro@GPIO_PORTC_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTC_BASE",
-    "location": {
-      "column": "9",
-      "line": "55",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTC_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2741@macro@GPIO_PORTD_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTD_BASE",
-    "location": {
-      "column": "9",
-      "line": "56",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTD_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2801@macro@SSI0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SSI0_BASE",
-    "location": {
-      "column": "9",
-      "line": "57",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "SSI0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2854@macro@SSI1_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SSI1_BASE",
-    "location": {
-      "column": "9",
-      "line": "58",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "SSI1_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2907@macro@SSI2_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SSI2_BASE",
-    "location": {
-      "column": "9",
-      "line": "59",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "SSI2_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@2960@macro@SSI3_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SSI3_BASE",
-    "location": {
-      "column": "9",
-      "line": "60",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "SSI3_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3013@macro@UART0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UART0_BASE",
-    "location": {
-      "column": "9",
-      "line": "61",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "UART0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3067@macro@UART1_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UART1_BASE",
-    "location": {
-      "column": "9",
-      "line": "62",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "UART1_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3121@macro@UART2_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UART2_BASE",
-    "location": {
-      "column": "9",
-      "line": "63",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "UART2_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3175@macro@UART3_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UART3_BASE",
-    "location": {
-      "column": "9",
-      "line": "64",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "UART3_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3229@macro@UART4_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UART4_BASE",
-    "location": {
-      "column": "9",
-      "line": "65",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "UART4_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3283@macro@UART5_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UART5_BASE",
-    "location": {
-      "column": "9",
-      "line": "66",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "UART5_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3337@macro@UART6_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UART6_BASE",
-    "location": {
-      "column": "9",
-      "line": "67",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "UART6_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3391@macro@UART7_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UART7_BASE",
-    "location": {
-      "column": "9",
-      "line": "68",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "UART7_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3445@macro@I2C0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "I2C0_BASE",
-    "location": {
-      "column": "9",
-      "line": "69",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "I2C0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3498@macro@I2C1_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "I2C1_BASE",
-    "location": {
-      "column": "9",
-      "line": "70",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "I2C1_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3551@macro@I2C2_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "I2C2_BASE",
-    "location": {
-      "column": "9",
-      "line": "71",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "I2C2_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3604@macro@I2C3_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "I2C3_BASE",
-    "location": {
-      "column": "9",
-      "line": "72",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "I2C3_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3657@macro@GPIO_PORTE_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTE_BASE",
-    "location": {
-      "column": "9",
-      "line": "73",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTE_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3717@macro@GPIO_PORTF_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTF_BASE",
-    "location": {
-      "column": "9",
-      "line": "74",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTF_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3777@macro@GPIO_PORTG_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTG_BASE",
-    "location": {
-      "column": "9",
-      "line": "75",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTG_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3837@macro@GPIO_PORTH_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTH_BASE",
-    "location": {
-      "column": "9",
-      "line": "76",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTH_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3897@macro@PWM0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PWM0_BASE",
-    "location": {
-      "column": "9",
-      "line": "77",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "PWM0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@3973@macro@PWM1_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "PWM1_BASE",
-    "location": {
-      "column": "9",
-      "line": "78",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "PWM1_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4049@macro@QEI0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "QEI0_BASE",
-    "location": {
-      "column": "9",
-      "line": "79",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "QEI0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4102@macro@QEI1_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "QEI1_BASE",
-    "location": {
-      "column": "9",
-      "line": "80",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "QEI1_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4155@macro@TIMER0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIMER0_BASE",
-    "location": {
-      "column": "9",
-      "line": "81",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "TIMER0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4210@macro@TIMER1_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIMER1_BASE",
-    "location": {
-      "column": "9",
-      "line": "82",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "TIMER1_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4265@macro@TIMER2_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIMER2_BASE",
-    "location": {
-      "column": "9",
-      "line": "83",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "TIMER2_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4320@macro@TIMER3_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIMER3_BASE",
-    "location": {
-      "column": "9",
-      "line": "84",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "TIMER3_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4375@macro@TIMER4_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIMER4_BASE",
-    "location": {
-      "column": "9",
-      "line": "85",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "TIMER4_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4430@macro@TIMER5_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIMER5_BASE",
-    "location": {
-      "column": "9",
-      "line": "86",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "TIMER5_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4485@macro@WTIMER0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "WTIMER0_BASE",
-    "location": {
-      "column": "9",
-      "line": "87",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "WTIMER0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4545@macro@WTIMER1_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "WTIMER1_BASE",
-    "location": {
-      "column": "9",
-      "line": "88",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "WTIMER1_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4605@macro@ADC0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ADC0_BASE",
-    "location": {
-      "column": "9",
-      "line": "89",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "ADC0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4658@macro@ADC1_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ADC1_BASE",
-    "location": {
-      "column": "9",
-      "line": "90",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "ADC1_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4711@macro@COMP_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "COMP_BASE",
-    "location": {
-      "column": "9",
-      "line": "91",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "COMP_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4778@macro@GPIO_PORTJ_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTJ_BASE",
-    "location": {
-      "column": "9",
-      "line": "92",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTJ_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4838@macro@CAN0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CAN0_BASE",
-    "location": {
-      "column": "9",
-      "line": "93",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "CAN0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4891@macro@CAN1_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CAN1_BASE",
-    "location": {
-      "column": "9",
-      "line": "94",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "CAN1_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@4944@macro@WTIMER2_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "WTIMER2_BASE",
-    "location": {
-      "column": "9",
-      "line": "95",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "WTIMER2_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5004@macro@WTIMER3_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "WTIMER3_BASE",
-    "location": {
-      "column": "9",
-      "line": "96",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "WTIMER3_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5064@macro@WTIMER4_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "WTIMER4_BASE",
-    "location": {
-      "column": "9",
-      "line": "97",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "WTIMER4_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5124@macro@WTIMER5_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "WTIMER5_BASE",
-    "location": {
-      "column": "9",
-      "line": "98",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "WTIMER5_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5184@macro@USB0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "USB0_BASE",
-    "location": {
-      "column": "9",
-      "line": "99",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "USB0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5249@macro@GPIO_PORTA_AHB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTA_AHB_BASE",
-    "location": {
-      "column": "9",
-      "line": "100",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTA_AHB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5322@macro@GPIO_PORTB_AHB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTB_AHB_BASE",
-    "location": {
-      "column": "9",
-      "line": "101",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTB_AHB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5395@macro@GPIO_PORTC_AHB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTC_AHB_BASE",
-    "location": {
-      "column": "9",
-      "line": "102",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTC_AHB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5468@macro@GPIO_PORTD_AHB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTD_AHB_BASE",
-    "location": {
-      "column": "9",
-      "line": "103",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTD_AHB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5541@macro@GPIO_PORTE_AHB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTE_AHB_BASE",
-    "location": {
-      "column": "9",
-      "line": "104",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTE_AHB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5614@macro@GPIO_PORTF_AHB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTF_AHB_BASE",
-    "location": {
-      "column": "9",
-      "line": "105",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTF_AHB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5687@macro@GPIO_PORTG_AHB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTG_AHB_BASE",
-    "location": {
-      "column": "9",
-      "line": "106",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTG_AHB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5760@macro@GPIO_PORTH_AHB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTH_AHB_BASE",
-    "location": {
-      "column": "9",
-      "line": "107",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTH_AHB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5833@macro@GPIO_PORTJ_AHB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTJ_AHB_BASE",
-    "location": {
-      "column": "9",
-      "line": "108",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTJ_AHB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5906@macro@GPIO_PORTK_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTK_BASE",
-    "location": {
-      "column": "9",
-      "line": "109",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTK_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@5966@macro@GPIO_PORTL_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTL_BASE",
-    "location": {
-      "column": "9",
-      "line": "110",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTL_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6026@macro@GPIO_PORTM_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTM_BASE",
-    "location": {
-      "column": "9",
-      "line": "111",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTM_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6086@macro@GPIO_PORTN_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTN_BASE",
-    "location": {
-      "column": "9",
-      "line": "112",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTN_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6146@macro@GPIO_PORTP_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTP_BASE",
-    "location": {
-      "column": "9",
-      "line": "113",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTP_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6206@macro@GPIO_PORTQ_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTQ_BASE",
-    "location": {
-      "column": "9",
-      "line": "114",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTQ_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6266@macro@GPIO_PORTR_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTR_BASE",
-    "location": {
-      "column": "9",
-      "line": "115",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTR_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6400@macro@GPIO_PORTS_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTS_BASE",
-    "location": {
-      "column": "9",
-      "line": "117",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTS_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6534@macro@GPIO_PORTT_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "GPIO_PORTT_BASE",
-    "location": {
-      "column": "9",
-      "line": "119",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "GPIO_PORTT_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6668@macro@EEPROM_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "EEPROM_BASE",
-    "location": {
-      "column": "9",
-      "line": "121",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "EEPROM_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6730@macro@ONEWIRE0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ONEWIRE0_BASE",
-    "location": {
-      "column": "9",
-      "line": "122",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "ONEWIRE0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6799@macro@I2C8_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "I2C8_BASE",
-    "location": {
-      "column": "9",
-      "line": "123",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "I2C8_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6852@macro@I2C9_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "I2C9_BASE",
-    "location": {
-      "column": "9",
-      "line": "124",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "I2C9_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6905@macro@I2C4_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "I2C4_BASE",
-    "location": {
-      "column": "9",
-      "line": "125",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "I2C4_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@6958@macro@I2C5_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "I2C5_BASE",
-    "location": {
-      "column": "9",
-      "line": "126",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "I2C5_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7011@macro@I2C6_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "I2C6_BASE",
-    "location": {
-      "column": "9",
-      "line": "127",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "I2C6_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7064@macro@I2C7_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "I2C7_BASE",
-    "location": {
-      "column": "9",
-      "line": "128",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "I2C7_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7117@macro@EPI0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "EPI0_BASE",
-    "location": {
-      "column": "9",
-      "line": "129",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "EPI0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7170@macro@TIMER6_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIMER6_BASE",
-    "location": {
-      "column": "9",
-      "line": "130",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "TIMER6_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7241@macro@TIMER7_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TIMER7_BASE",
-    "location": {
-      "column": "9",
-      "line": "131",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "TIMER7_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7312@macro@EMAC0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "EMAC0_BASE",
-    "location": {
-      "column": "9",
-      "line": "132",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "EMAC0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7380@macro@SYSEXC_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SYSEXC_BASE",
-    "location": {
-      "column": "9",
-      "line": "133",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "SYSEXC_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7452@macro@HIB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "HIB_BASE",
-    "location": {
-      "column": "9",
-      "line": "134",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "HIB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7519@macro@FLASH_CTRL_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "FLASH_CTRL_BASE",
-    "location": {
-      "column": "9",
-      "line": "135",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "FLASH_CTRL_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7584@macro@SYSCTL_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SYSCTL_BASE",
-    "location": {
-      "column": "9",
-      "line": "136",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "SYSCTL_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7647@macro@UDMA_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UDMA_BASE",
-    "location": {
-      "column": "9",
-      "line": "137",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "UDMA_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7711@macro@CCM0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CCM0_BASE",
-    "location": {
-      "column": "9",
-      "line": "138",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "CCM0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7791@macro@SHAMD5_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SHAMD5_BASE",
-    "location": {
-      "column": "9",
-      "line": "139",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "SHAMD5_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@7859@macro@AES_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "AES_BASE",
-    "location": {
-      "column": "9",
-      "line": "140",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "AES_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@8002@macro@DES_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DES_BASE",
-    "location": {
-      "column": "9",
-      "line": "142",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "DES_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@8141@macro@LCD0_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LCD0_BASE",
-    "location": {
-      "column": "9",
-      "line": "144",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "LCD0_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@8204@macro@ITM_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ITM_BASE",
-    "location": {
-      "column": "9",
-      "line": "145",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "ITM_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@8284@macro@DWT_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DWT_BASE",
-    "location": {
-      "column": "9",
-      "line": "146",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "DWT_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@8358@macro@FPB_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "FPB_BASE",
-    "location": {
-      "column": "9",
-      "line": "147",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "FPB_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@8433@macro@NVIC_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "NVIC_BASE",
-    "location": {
-      "column": "9",
-      "line": "148",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "NVIC_BASE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:hw_memmap.h@8512@macro@TPIU_BASE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TPIU_BASE",
-    "location": {
-      "column": "9",
-      "line": "149",
-      "path": "C:\\Users\\Giovane\\Documents\\Embarcados\\entregas\\TivaWare_C_Series-2.1.4.178\\inc\\hw_memmap.h"
-    },
-    "name": "TPIU_BASE",
     "origin": "user_include",
     "scope": null
   },
