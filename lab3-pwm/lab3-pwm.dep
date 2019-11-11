@@ -45,7 +45,12 @@
             <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
             <file>$PROJ_DIR$\Debug\Obj\startup_TM4C1294.o</file>
+            <file>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\adc.h</file>
+            <file>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\pwm.c</file>
+            <file>$PROJ_DIR$\..\lab2\src\system_TM4C1294_TW.c</file>
             <file>$PROJ_DIR$\..\lab2\src\main.c</file>
+            <file>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\fpu.h</file>
+            <file>$PROJ_DIR$\..\..\TivaWare_C_Series-2.1.4.178\driverlib\adc.c</file>
         </outputs>
         <file>
             <name>$PROJ_DIR$\src\system_TM4C1294_TW.c</name>
@@ -89,7 +94,7 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 7 17 12 15 8 22 19 37 35 33 0 14 34 25 11</file>
+                    <file> 7 17 12 15 8 22 19 37 35 33 0 14 34 25 11 40 44</file>
                 </tool>
             </inputs>
         </file>

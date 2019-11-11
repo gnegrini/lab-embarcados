@@ -10,9 +10,16 @@
 #include "driverlib/sysctl.h"
 #include "driverlib/gpio.h"
 #include "driverlib/pwm.h"
+#include "driverlib/adc.h"
+#include "driverlib/fpu.h"
 
 #define MAX (10)
+#define PRECISAO (4095)
+#define TICKS_IN_PERIOD (400)
 
+
+uint32_t PotValue;
+uint32_t dc;
 
 void GPIOInit(){
     
@@ -24,8 +31,11 @@ void GPIOInit(){
   // Set pins 0 and 1 as output, SW controlled
   GPIOPinTypeGPIOOutput(GPIO_PORTE_BASE, GPIO_PIN_0 | GPIO_PIN_1);
   
-  // Set pins 4 as input, SW controlled
-  GPIOPinTypeGPIOInput(GPIO_PORTE_BASE, GPIO_PIN_4);
+  // Set pins 4 as analog input and adc
+  //GPIOPinTypeGPIOInput(GPIO_PORTE_BASE, GPIO_PIN_4);    
+  //GPIOPadConfigSet(GPIO_PORTE_BASE, GPIO_PIN_4, GPIO_STRENGTH_2MA ,GPIO_PIN_TYPE_ANALOG);
+  
+  GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_4);
   
   ///PWM GPIO (PF2)
   // Enable and wait for the GPIOF peripheral
@@ -64,8 +74,8 @@ void PWMInit (void){
   // 20MHz => 20.000.000 ticks every second or 1 tick every 50 nanosecond
   // 50Khz => 20 microseconds
   // How many clock ticks in 20 mcsec? = 20e-6 / 50e-9 = 400
-  // Or: 20Mhz / 50Khz = 400 ticks
-  PWMGenPeriodSet(PWM0_BASE, PWM_GEN_1, 400);
+  // Or: 20Mhz / 50Khz = 400 ticks = TICKS_IN_PERIOD
+  PWMGenPeriodSet(PWM0_BASE, PWM_GEN_1, TICKS_IN_PERIOD);
   
   // Set the pulse width of PWM2 for a 25% duty cycle.
   PWMPulseWidthSet(PWM0_BASE, PWM_OUT_2, 100);
@@ -78,21 +88,82 @@ void PWMInit (void){
 
 }
 
+void ADCInit(){  
+  
+  //Enable and Wait the ADC0 module.  
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_ADC0);
+  while(!SysCtlPeripheralReady(SYSCTL_PERIPH_ADC0)){}
+  
+  //// Enable the first sample sequencer to capture the value of channel 0 when
+  // the processor trigger occurs.//
+  ADCSequenceConfigure(ADC0_BASE, 0, ADC_TRIGGER_PROCESSOR, 0);
+  ADCSequenceStepConfigure(ADC0_BASE, 0, 0,ADC_CTL_IE | ADC_CTL_END | ADC_CTL_CH9);
+  ADCSequenceEnable(ADC0_BASE, 0);
+ 
+  // Clear the interrupt status flag.
+  //ADCIntClear(ADC0_BASE, 0);
+  
+}
+
+//Grava valor discreto do Pot em PotValue;
+//12 bits de precisao => (0 a 4095)
+void PotRead (void){  
+  //// Trigger the sample sequence.//
+  ADCProcessorTrigger(ADC0_BASE, 0);
+  
+  //// Wait until the sample sequence has completed.//
+  while(!ADCIntStatus(ADC0_BASE, 0, false)){}
+  
+  // Clear the ADC interrupt flag.
+  //ADCIntClear(ADC0_BASE, 3);
+  
+  //// Read the value from the ADC.//
+  ADCSequenceDataGet(ADC0_BASE, 0, &PotValue);
+  
+  // Delay 250ms
+  //SysCtlDelay(SysCtlClockGet() / 12);
+  
+}
+
+void RunMotor(){
+  
+ 
+  PotRead();
+  
+  
+  dc = ((float) PotValue / (float) PRECISAO) * (float) TICKS_IN_PERIOD;
+  
+  // Set the pulse width of PWM2 with dc
+  PWMPulseWidthSet(PWM0_BASE, PWM_OUT_2, dc);
+  
+  
+}
+
+
 
 void main(void){
     
+  FPUEnable();
+  FPULazyStackingEnable();
+  
   GPIOInit();
   PWMInit();
+  ADCInit();
   
-  
-  // Set the pulse width of PWM2 for a 75% duty cycle.
-  PWMPulseWidthSet(PWM0_BASE, PWM_OUT_2, 300);
   
   // Girar motor no Sentido Horario
   GPIOPinWrite(GPIO_PORTE_BASE,(GPIO_PIN_1 | GPIO_PIN_0),(GPIO_PIN_0));
+    
+  
+  while(1){      
+      
+    RunMotor();
+    
+  }
+  
   
   // Girar motor no Sentido Anti-Horario
-  GPIOPinWrite(GPIO_PORTE_BASE,(GPIO_PIN_1 | GPIO_PIN_0),(GPIO_PIN_1));
+  //GPIOPinWrite(GPIO_PORTE_BASE,(GPIO_PIN_1 | GPIO_PIN_0),(GPIO_PIN_1));
 
   
   

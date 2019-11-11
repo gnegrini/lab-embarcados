@@ -49,7 +49,7 @@
         <MultiCoreRunAll>1</MultiCoreRunAll>
     </Simulator>
     <DebugChecksum>
-        <Checksum>2935606770</Checksum>
+        <Checksum>656462262</Checksum>
     </DebugChecksum>
     <LMIFTDIDriver>
         <LMIFTDIserialNo>0F00B329</LMIFTDIserialNo>
@@ -81,8 +81,9 @@
         <Category>_ 0</Category>
     </LogFile>
     <Aliases>
-        <A0>_ "C:\Users\Giovane\Downloads\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178\driverlib\pwm.c" "C:\Users\Giovane\Documents\Embarcados\entregas\TivaWare_C_Series-2.1.4.178\driverlib\pwm.c"</A0>
-        <Count>1</Count>
+        <A0>_ "C:\Users\Giovane\Downloads\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178\driverlib\adc.c" "C:\Users\Giovane\Documents\Embarcados\entregas\TivaWare_C_Series-2.1.4.178\driverlib\adc.c"</A0>
+        <A1>_ "C:\Users\Giovane\Downloads\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178\driverlib\pwm.c" "C:\Users\Giovane\Documents\Embarcados\entregas\TivaWare_C_Series-2.1.4.178\driverlib\pwm.c"</A1>
+        <Count>2</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
     <CallStackLog>
