@@ -1,8 +1,17 @@
+////////////////////////////////////////////
+// Sistemas Embarcados - S12 - 2019.2
+// Alunos: Giovane N. M. Costa            
+//         Henrique K. Xavier
+//         Julio C. Penha
+// Grupo: S12G07
+///////////////////////////////////////////
+
+
+
 #include <stdint.h>
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
-
 
 // includes da biblioteca driverlib
 #include "inc/hw_memmap.h"
