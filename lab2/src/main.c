@@ -88,8 +88,8 @@ void TIMER0Init(){
   //TimerA full one-shot timer
   TimerConfigure(TIMER0_BASE, TIMER_CFG_A_ONE_SHOT_UP);
     
-  //Ajusta o tempo do OneShot 5s
-  TimerLoadSet(TIMER0_BASE, TIMER_A, 0X10000);
+  //Ajusta o tempo do OneShot 5s (0x100000)
+  TimerLoadSet(TIMER0_BASE, TIMER_A, 0X10000000);
   
   //Ativa a interrupcao no timer
   TimerIntEnable(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
@@ -105,6 +105,9 @@ void TIMER2Init(){
   
   //Timer2 full-width time capture up
   TimerConfigure(TIMER2_BASE, (TIMER_CFG_SPLIT_PAIR | TIMER_CFG_A_CAP_TIME_UP));    
+  
+  //Set the prescale for timer2A
+  TimerPrescaleSet(TIMER2_BASE, TIMER_A, 255);
   
   //Configura o Timer2 para ambas bordas
   TimerControlEvent(TIMER2_BASE, TIMER_A, TIMER_EVENT_BOTH_EDGES);
@@ -152,6 +155,10 @@ void imprime() {
   
   for (i = 0; i< (MAX-2); i+=2) {
     
+    if(sample[i+2] < sample[i]){
+      sample[i+2] += 0xffff;
+    }    
+    
     periodo_onda = sample[i+2] - sample[i];
     frequencia_onda = (float) SystemCoreClock / (float) periodo_onda;
     duty_cycle = (float) (sample[i+1] - sample[i]) / (float) periodo_onda;    
@@ -181,8 +188,6 @@ void main(void){
   TIMER2Init(); //PM0
   
   
-  
-  
   //ativa interrupcoes
   IntEnable(INT_TIMER0A);
   IntEnable(INT_TIMER2A);
@@ -207,7 +212,13 @@ void main(void){
     } else
     
     if(time_out) {
-      UARTprintf("Time Out: DC = 0%% \n");
+      
+      if(GPIOPinRead(GPIO_PORTM_BASE, GPIO_PIN_0) == GPIO_PIN_0)        {
+        UARTprintf("Time Out: DC = 100%% \n");
+      }else{
+        UARTprintf("Time Out: DC = 0%% \n");
+      }
+      
       UARTDisable(UART0_BASE);
       exit(1);
     }

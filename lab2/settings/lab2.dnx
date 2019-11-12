@@ -53,7 +53,7 @@
         <LMIFTDIfoundProbes />
     </LMIFTDIDriver>
     <DebugChecksum>
-        <Checksum>3135401813</Checksum>
+        <Checksum>258803037</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -65,23 +65,33 @@
     <Disassembly>
         <MixedMode>1</MixedMode>
     </Disassembly>
+    <watch_formats>
+        <Fmt0>{W}1:sample[0]	3	0</Fmt0>
+        <Fmt1>{W}1:sample[1]	3	0</Fmt1>
+        <Fmt2>{W}1:sample[2]	3	0</Fmt2>
+    </watch_formats>
     <CallStackLog>
         <Enabled>0</Enabled>
     </CallStackLog>
     <CallStackStripe>
         <ShowTiming>1</ShowTiming>
     </CallStackStripe>
-    <DisassembleMode>
-        <mode>0</mode>
-    </DisassembleMode>
-    <Breakpoints>
-        <Count>0</Count>
-    </Breakpoints>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
     <LogFile>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
         <Category>_ 0</Category>
     </LogFile>
+    <DisassembleMode>
+        <mode>0</mode>
+    </DisassembleMode>
+    <Breakpoints>
+        <Bp0>_ "STD_CODE" "{$PROJ_DIR$\src\main.c}.158.5" 1 0 0 0 "" 0 ""</Bp0>
+        <Count>1</Count>
+    </Breakpoints>
     <Aliases>
         <A0>_ "C:\Users\Giovane\Downloads\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178\driverlib\gpio.c" "C:\Users\Giovane\Documents\Embarcados\entregas\TivaWare_C_Series-2.1.4.178\driverlib\gpio.c"</A0>
         <A1>_ "C:\Users\Giovane\Downloads\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.c" "C:\Users\Giovane\Documents\Embarcados\entregas\TivaWare_C_Series-2.1.4.178\driverlib\sysctl.c"</A1>
@@ -89,8 +99,4 @@
         <Count>3</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
-    <TermIOLog>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-    </TermIOLog>
 </settings>
