@@ -14,6 +14,7 @@
 #include "driverlib/pwm.h"
 #include "driverlib/adc.h"
 #include "driverlib/fpu.h"
+#include "driverlib/qei.h"
 #include "driverlib/interrupt.h"
 
 #define MAX (10)
@@ -27,6 +28,8 @@
 uint32_t PotValue;
 uint32_t dc;
 uint8_t horario = 0;
+uint32_t qei_vel; 
+uint32_t qei_dir; 
 
 
 
@@ -66,6 +69,20 @@ void GPIOInit(){
   
   GPIOPinTypeADC(GPIO_PORTE_BASE, GPIO_PIN_4);
   
+  
+  
+  ///QEI GPIO
+
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOL);
+  while(!SysCtlPeripheralReady(SYSCTL_PERIPH_GPIOL)){};
+  
+  
+  GPIOPinTypeQEI(GPIO_PORTL_BASE, (GPIO_PIN_2 | GPIO_PIN_1));
+    
+  GPIOPinConfigure(0x000A0406); // GPIO_PL1_PHA0: x000A0406   
+  GPIOPinConfigure(0x000A0806);  // GPIO_PL2_PHB0: 0x000A0806
+    
+    
   ///PWM GPIO (PF2)
   // Enable and wait for the GPIOF peripheral
   SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOF); 
@@ -195,9 +212,42 @@ void RunMotor(){
   // Set the pulse width of PWM2 with dc
   PWMPulseWidthSet(PWM0_BASE, PWM_OUT_2, dc);
   
+  QEIPositionGet(QEI0_BASE);
+  qei_vel = QEIVelocityGet(QEI0_BASE);
+  qei_dir = QEIDirectionGet(QEI0_BASE);
+  
 }
 
 
+
+void QEIInit(){
+  
+  //// Enable the QEI0 peripheral
+  SysCtlPeripheralEnable(SYSCTL_PERIPH_QEI0);
+  
+  //// Wait for the QEI0 module to be ready.//
+  while(!SysCtlPeripheralReady(SYSCTL_PERIPH_QEI0)){}
+  
+  
+  //// Configure the quadrature encoder to capture edges on both signals .
+  //Using a 1000 line encoder at four edges per line, there are 4000 pulses per
+  // revolution; therefore set the maximum position to 3999 as the count
+  // is zero based.
+  
+  QEIConfigure(QEI0_BASE, (QEI_CONFIG_CAPTURE_A_B | QEI_CONFIG_NO_RESET |QEI_CONFIG_QUADRATURE | QEI_CONFIG_NO_SWAP), 71);  
+  QEIPositionSet(QEI0_BASE, 0);
+  
+  QEIVelocityConfigure(QEI0_BASE, QEI_VELDIV_1, 120000);
+  
+                       
+                       
+  // Enable the quadrature encoder.//
+  QEIEnable(QEI0_BASE);
+  
+  QEIVelocityEnable(QEI0_BASE);
+
+
+}
 
 void main(void){
     
@@ -205,8 +255,11 @@ void main(void){
   FPULazyStackingEnable();
   
   GPIOInit();
-  PWMInit();
+  QEIInit();
   ADCInit();
+  PWMInit();
+  
+  
   IntMasterEnable();
   
   while(1){      
